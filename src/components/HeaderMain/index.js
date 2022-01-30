@@ -6,6 +6,7 @@ const HeaderMain = styled.header`
   display: flex;
   justify-content: space-between;
   background-color: black;
+  padding: 16px 16px 28px;
 
   & > ${LogoMain}, & > ${IconSearch} {
     width: 24px;
