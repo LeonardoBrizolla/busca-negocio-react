@@ -12,7 +12,6 @@ const ButtonFixed = styled.button`
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.15px;
-  font-family: 'Comfortaa', sans-serif;
   text-transform: uppercase;
 `;
 
