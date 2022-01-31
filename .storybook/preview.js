@@ -1,5 +1,8 @@
+import Styles from '../src/styles';
+
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
+  layout: 'fullscreen',
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -16,3 +19,12 @@ export const parameters = {
     ],
   },
 };
+
+export const decorators = [
+  (Story) => (
+    <>
+      <Styles />
+      <Story />
+    </>
+  ),
+];
