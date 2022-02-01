@@ -9,5 +9,5 @@ export default {
 };
 
 export function Default() {
-  return <Checkbox id="example" />;
+  return <Checkbox id="alimentacao" label="Alimentação" />;
 }
