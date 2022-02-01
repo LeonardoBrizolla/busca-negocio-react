@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 const Base = createGlobalStyle`
-  body {
+  body, #root {
+    font-family: 'Comfortaa', sans-serif;
     background-color: #47587c;
   }
 `;
