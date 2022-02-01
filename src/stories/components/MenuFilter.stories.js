@@ -6,5 +6,5 @@ export default {
 };
 
 export function Default() {
-  return <MenuFilter />;
+  return <MenuFilter active />;
 }
