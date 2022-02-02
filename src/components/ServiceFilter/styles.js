@@ -6,6 +6,7 @@ export const ServiceFilterStyle = styled.nav`
   align-items: center;
   background-color: rgba(58, 64, 66, 0.4);
   padding: 8px var(--gap-small);
+  cursor: pointer;
 
   & > ${IconFilter} {
     margin-right: var(--gap-small);

@@ -10,6 +10,7 @@ const MenuFilterStyle = styled.menu`
   right: 0;
   background-color: #3a4042;
   padding: var(--gap-medium) var(--gap-small);
+  z-index: 100;
 
   transition: transform 200ms ease-in-out;
 
