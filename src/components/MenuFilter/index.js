@@ -1,9 +1,9 @@
 import MenuFilterStyle from './styles';
 import Checkbox from '../Checkbox';
 
-function MenuFilter() {
+function MenuFilter({ active }) {
   return (
-    <MenuFilterStyle>
+    <MenuFilterStyle active={active}>
       <Checkbox id="alimentacao" label="Alimentação" />
       <Checkbox id="animais" label="Animais" />
       <Checkbox id="arteecultura" label="Arte e Cultura" />
