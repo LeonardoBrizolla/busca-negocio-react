@@ -13,7 +13,7 @@ function ServiceFilter() {
 
   return (
     <>
-      <ServiceFilterStyle onClick={handleToggleMenu}>
+      <ServiceFilterStyle active={activeMenu} onClick={handleToggleMenu}>
         <IconFilter />
         <IconClose />
         <Label>Guia de serviços</Label>
