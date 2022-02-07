@@ -1,11 +1,15 @@
 import HeaderMain from '../../components/HeaderMain';
-import IconArrow from '../../components/IconArrow';
+import BackAction from '../../components/BackAction';
+import Stars from '../../components/Stars';
+import Title from '../../components/Title';
 
 function Details() {
   return (
     <>
       <HeaderMain />
-      <IconArrow />
+      <BackAction />
+      <Stars amount="5" />
+      <Title>Cafeteria D Arte</Title>
     </>
   );
 }
