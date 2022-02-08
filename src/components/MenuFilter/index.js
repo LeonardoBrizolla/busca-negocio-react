@@ -28,7 +28,7 @@ function MenuFilter({ active }) {
   return (
     <MenuFilterStyle active={active}>
       {items.map(({ id, label }) => (
-        <Checkbox id={id} label={label} />
+        <Checkbox key={id} id={id} label={label} />
       ))}
     </MenuFilterStyle>
   );
