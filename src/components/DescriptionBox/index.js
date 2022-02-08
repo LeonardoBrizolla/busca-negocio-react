@@ -9,6 +9,7 @@ const DescriptionBox = styled.p`
   width: 288px;
   padding: 10px;
   line-height: 30px;
+  box-sizing: border-box;
 `;
 
 export default DescriptionBox;

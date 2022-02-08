@@ -7,6 +7,7 @@ const PhotoPreview = styled.img.attrs({
 })`
   border-radius: 14px;
   border: 2px solid #fffcee;
+  box-sizing: border-box;
 `;
 
 export default PhotoPreview;
