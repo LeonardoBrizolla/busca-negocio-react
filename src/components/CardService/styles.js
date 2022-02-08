@@ -25,13 +25,13 @@ export const Photo = styled.img.attrs({ src: photo, alt: 'Foto cafeteria' })`
 `;
 
 export const Caption = styled.figcaption`
+  display: ${({ active }) => (active ? 'flex' : 'none')};
   color: #fffcee;
   font-size: 24px;
   text-transform: uppercase;
 
   background-color: #f25a70;
   height: 36px;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-top: 2px solid #fffcee;
