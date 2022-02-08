@@ -1,5 +1,4 @@
 import BackAction from '../../components/BackAction';
-import IconArrow from '../../components/IconArrow';
 
 export default {
   title: 'Components/BackAction',
@@ -9,10 +8,14 @@ export default {
   },
 };
 
-export function Default() {
-  return (
-    <BackAction as="a">
-      <IconArrow />
-    </BackAction>
-  );
+function Template(args) {
+  const { content } = args;
+
+  return <BackAction content={content} as="a" />;
 }
+
+export const Default = Template.bind({});
+
+Default.args = {
+  content: 'Voltar',
+};
