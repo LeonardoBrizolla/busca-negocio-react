@@ -8,22 +8,31 @@ export default {
   },
 };
 
-export function OneStar() {
-  return <Stars amount="1" />;
+function Template(args) {
+  return <Stars {...args} />;
 }
 
-export function TwoStar() {
-  return <Stars amount="2" />;
-}
+export const OneStar = Template.bind({});
+OneStar.args = {
+  amount: '1',
+};
 
-export function ThreeStar() {
-  return <Stars amount="3" />;
-}
+export const TwoStar = Template.bind({});
+TwoStar.args = {
+  amount: '2',
+};
 
-export function FourStar() {
-  return <Stars amount="4" />;
-}
+export const ThreeStar = Template.bind({});
+ThreeStar.args = {
+  amount: '3',
+};
 
-export function FiveStar() {
-  return <Stars amount="5" />;
-}
+export const FourStar = Template.bind({});
+FourStar.args = {
+  amount: '4',
+};
+
+export const FiveStar = Template.bind({});
+FiveStar.args = {
+  amount: '5',
+};
