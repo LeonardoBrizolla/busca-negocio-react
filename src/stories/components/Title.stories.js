@@ -8,6 +8,11 @@ export default {
   },
 };
 
-export function Default() {
-  return <Title>Cafeteria D Arte</Title>;
+function Template(args) {
+  return <Title {...args} />;
 }
+
+export const Default = Template.bind({});
+Default.args = {
+  children: 'Cafeteria D Arte',
+};

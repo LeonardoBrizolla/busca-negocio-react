@@ -1,16 +1,14 @@
-import styled from 'styled-components';
-import { CardServiceStyles } from '../CardService/styles';
+import ServicesStyles from './styles';
+import CardService from '../CardService';
 
-const Services = styled.section`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: var(--gap-medium);
-  padding-bottom: calc(50px + var(--gap-medium));
-
-  & > ${CardServiceStyles}:not(:last-child) {
-    margin-bottom: var(--gap-medium);
-  }
-`;
+function Services({ listServices }) {
+  return (
+    <ServicesStyles>
+      {listServices.map((props) => (
+        <CardService {...props} />
+      ))}
+    </ServicesStyles>
+  );
+}
 
 export default Services;

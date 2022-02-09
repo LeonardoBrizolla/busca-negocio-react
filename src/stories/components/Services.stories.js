@@ -1,5 +1,25 @@
 import Services from '../../components/Services';
-import CardService from '../../components/CardService';
+
+const listServices = [
+  {
+    featuredContent: 'Em destaque',
+    featured: true,
+    name: 'Cafeteria D Arte',
+    stars: '4',
+  },
+  {
+    featuredContent: 'Em destaque',
+    featured: false,
+    name: 'Cafeteria Maria',
+    stars: '5',
+  },
+  {
+    featuredContent: 'Em destaque',
+    featured: false,
+    name: 'Cafeteria Leo',
+    stars: '5',
+  },
+];
 
 export default {
   title: 'components/Services',
@@ -9,13 +29,12 @@ export default {
   },
 };
 
-export function Default() {
-  return (
-    <Services>
-      <CardService />
-      <CardService />
-      <CardService />
-      <CardService />
-    </Services>
-  );
+function Template(args) {
+  return <Services {...args} />;
 }
+
+export const Default = Template.bind({});
+
+Default.args = {
+  listServices,
+};

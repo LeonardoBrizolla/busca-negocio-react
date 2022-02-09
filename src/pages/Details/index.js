@@ -6,7 +6,7 @@ function Details() {
   return (
     <>
       <HeaderMain />
-      <BackAction />
+      <BackAction content="Voltar" />
       <WrapperBusiness />
     </>
   );

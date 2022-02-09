@@ -5,6 +5,12 @@ export default {
   component: ButtonFixed,
 };
 
-export function Default() {
-  return <ButtonFixed>Insira o seu negócio</ButtonFixed>;
+function Template(args) {
+  return <ButtonFixed {...args} />;
 }
+
+export const Default = Template.bind({});
+
+Default.args = {
+  children: 'Insira o seu negócio',
+};
