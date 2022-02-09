@@ -10,7 +10,7 @@ export const CardServiceStyles = styled.article`
   overflow: hidden;
   padding-bottom: var(--gap-smaller);
 
-  & > ${StarsStyle} {
+  & ${StarsStyle} {
     margin: var(--gap-smaller) 0 var(--gap-smaller) var(--gap-smaller);
   }
 `;
